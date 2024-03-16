@@ -1,0 +1,334 @@
+/* Common CSS */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #717171;
+}
+
+.text-color-green {
+  color: #1bbc9b !important;
+}
+
+.text-color-black {
+  color: #3c3c3c !important;
+}
+
+.fw-light {
+  font-weight: 300 !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url("assets/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.hero-search-wrap {
+  height: 400px;
+  padding: 200px 0;
+}
+
+.page-btn {
+  background-color: #1bbc9b;
+  color: #fff;
+  padding: 15px 20px;
+  display: inline-block;
+}
+
+.banner-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin: 0 12px 16px 0;
+  display: inline-block;
+}
+
+.banner-button-wrap .active {
+  border-bottom: 4px solid #1bbc9b !important;
+}
+
+.banner-button-wrap {
+  left: 13%;
+  bottom: 100%;
+}
+
+/* banner search form */
+
+.search-select {
+  font-size: 18px;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  margin-right: 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.search-input {
+  font-size: 16px;
+  padding: 9px 15px;
+  width: 33rem;
+}
+
+.search-btn {
+  font-size: 18px;
+  padding: 10px 25px;
+  background-color: #1bbc9b;
+  color: #fff;
+  border: none;
+}
+
+/* cta section */
+
+.cta-section .col-lg-7 {
+  padding: 0 !important;
+}
+
+.cta-section .col-lg-5 {
+  padding-left: 0 !important;
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+.cta-login-wrap {
+  padding: 40px 65px;
+}
+
+.cta-img-wrap {
+  background: url("./assets/project_image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.input-field {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.6) !important;
+  color: #f5f5f5;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px 15px;
+}
+
+.cta-btn-wrap .page-btn {
+  width: 100%;
+  display: inline-block;
+}
+
+.footer-info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 35px;
+
+  background-color: #1bbc9b;
+  color: #fff;
+  /* font-weight: 400; */
+}
+
+.upper-foot-cta .p1 {
+  font-size: 23px;
+  line-height: 20px;
+}
+
+.lower-foot-cta {
+  border: 2px solid #fff;
+}
+
+.upper-foot-cta .p1 {
+  font-size: 19px;
+}
+.upper-foot-cta .p2 {
+  font-size: 15px;
+}
+
+.lower-foot-cta .p1 {
+  font-size: 15px;
+}
+
+.lower-foot-cta .p2 {
+  font-weight: 600 !important;
+}
+
+/* Properties info wrap */
+
+.properties-info-wrap,
+.properties-info-head {
+  padding: 0 35px 0 70px;
+}
+
+.right-gray-border {
+  border-right: 2px solid #d2d2d2;
+}
+
+.property-location-wrap .location-card .card-text p {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+.search-prop p {
+  font-size: 17px;
+}
+
+/* counter section */
+
+.project-counter {
+  background-color: #2e2e2e;
+}
+
+.circle-wrap {
+  padding: 75px;
+  border-radius: 100px;
+  background-color: #fff;
+}
+
+.circle-text {
+  top: 32%;
+  left: 25%;
+  font-size: 38px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* testinomials */
+
+.carousal-text {
+  color: #2c2c2c;
+}
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 50px;
+  background-clip: inherit !important;
+  background-color: #858585 !important;
+  width: 22px !important;
+  margin: 10px 7px !important;
+}
+
+.carousel-indicators {
+  margin-bottom: -1rem !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none !important;
+}
+
+/* .developer-profile .col-md-3  {
+  border-right: 2px solid #d2d2d2;
+} */
+
+.developer-img-border {
+  border-right: 2px solid #d2d2d2;
+}
+
+/* Media Screen */
+
+/* device category CSS max-width 1200 px */
+
+@media only screen and (max-width: 1200px) {
+  .hero-section {
+    height: 390px;
+  }
+
+  .banner-button-wrap {
+    left: 5%;
+  }
+}
+
+/* device category CSS max-width 992 px */
+
+@media screen and (max-width: 992px) {
+  .hero-section {
+    height: 330px;
+  }
+  .hero-search-wrap {
+    padding: 153px 0;
+  }
+  .banner-button-wrap {
+    left: 0;
+  }
+  .search-input {
+    width: 24rem;
+  }
+
+  .cta-login-wrap {
+    background-color: #1d1d1d !important;
+  }
+
+  .cta-section .col-lg-5 {
+    padding: 0 !important;
+  }
+}
+
+/* device category CSS max-width 768 px */
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+
+  .hero-search-wrap {
+    padding: 125px 20px;
+  }
+
+  .search-select {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .search-input {
+    width: -webkit-fill-available;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .page-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .properties-info-wrap,
+  .properties-info-head {
+    padding: 0;
+  }
+
+  .location-card {
+    padding-right: 20px;
+  }
+
+  .right-gray-border {
+    border-right: 0;
+    border-bottom: 2px solid #d2d2d2;
+  }
+
+  .developer-img-border {
+    border-right: 0;
+  }
+}
+
+/* device category CSS max-width 576 px */
+
+@media screen and (max-width: 576px) {
+  .hero-search-wrap {
+    padding: 90px 20px;
+  }
+
+  .cta-login-wrap {
+    padding: 30px 20px;
+  }
+
+  .circle-wrap {
+    padding: 65px;
+  }
+
+  .circle-text {
+    top: 32%;
+    left: 26%;
+    font-size: 33px;
+  }
+}
