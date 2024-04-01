@@ -1,0 +1,508 @@
+/* common css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Vidaloka&display=swap");
+
+.roboto-text {
+  font-family: "Roboto", sans-serif;
+}
+
+#disclaimer p,
+.text-justify {
+  text-align: justify;
+}
+
+.vidaloka-text {
+  font-family: "Vidaloka";
+}
+
+p {
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-pad-top {
+  padding-top: 80px;
+}
+
+.section-pad-bottom {
+  padding-bottom: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.list-style-none {
+  list-style: none !important;
+}
+
+/* header navbar */
+
+.lp-header-section {
+  background-color: #fff;
+}
+
+.logo1-img-wrap img {
+  width: 110px;
+}
+
+.logo2-img-wrap img {
+  width: 200px;
+}
+#navbar nav{
+  position: fixed;
+  top: 0;
+  z-index: 50 ;
+  width: 100%;
+}
+
+.menu-item a {
+  padding: 0 20px;
+  font-size: 15px;
+  color: #000 !important;
+  font-family: "MyriadPro", sans-serif;
+  font-weight: 500;
+}
+
+.mobile-menu-item a {
+  font-size: 16px;
+  color: #000 !important;
+  font-family: "MyriadPro", sans-serif;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+/* overview section */
+
+.section-bg-gray {
+  background-color: #f7f7f7 !important;
+}
+
+.head-underline {
+  height: 8px;
+  width: 311px;
+  max-width: 100%;
+  margin: 20px auto 25px;
+  background-image: url(../images/headline-border.png);
+  background-size: contain;
+}
+
+.section-head {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 2.5px;
+  position: relative;
+  /* padding-bottom: 20px; */
+}
+
+.section-head::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  width: 90px;
+  background: #e8a01b;
+  margin: auto;
+  transition: 0.3s;
+}
+
+#disclaimer .section-head::after,
+#gallery .section-head::after,
+#contact .section-head::after,
+#about .section-head::after,
+#amenities .section-head::after,
+#overview .section-head::after {
+  display: none;
+}
+
+.bg-yellow {
+  background-color: rgb(255, 219, 158);
+}
+
+.sect-text-wrap p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  background-color: #e8a01b;
+  padding: 8px 15px;
+  letter-spacing: 1.2px;
+  color: #fff;
+  width: 130px;
+  font-weight: 600;
+  border-radius: 15px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.section-bg-img::before,
+.section-bg-img::after {
+  position: absolute;
+  content: "";
+  width: clamp(6.25rem, 0.858rem + 20.349vw, 10.625rem);
+  /* height: 100%; */
+  /* background: linear-gradient(
+    90deg,
+    #f69220 0.04%,
+    #f68e20 28.67%,
+    #f48421 54.05%,
+    #f37221 78.11%,
+    #f05a22 100.04%
+  ); */
+
+  /* background: linear-gradient(90deg, #fddf20, #f69220 0.04%); */
+
+  background: #ffa500;
+
+  transform: translateY(-50%);
+  border-radius: 5px;
+  /* z-index: -1; */
+  opacity: 0.2;
+}
+
+.section-bg-img::before {
+  top: 50%;
+  left: 50px;
+}
+
+.section-bg-img::after {
+  top: 50%;
+  right: 50px;
+}
+
+/* .overview-img {
+  max-width: 360px;
+  z-index: 50;
+  border: 5px solid #ffa500;
+} */
+
+.overview-img-wrap .section-bg-img {
+  background: url(images/vision-palm-amore.jpg);
+  /* border: 5px solid #ffa500; */
+}
+
+.location-img-wrap .section-bg-img {
+  background: url(images/palm-amore-city.png);
+  /* border: 5px solid #ffa500; */
+}
+
+.location-img-wrap {
+  border: 5px solid #ffa500;
+}
+
+.yellow-border-top {
+  border-top: 2px solid #e8a01b !important;
+}
+
+.config-table-wrap {
+  padding: 0 12%;
+  text-align: center;
+}
+
+.tab-head {
+  background-color: #ffa500 !important;
+  border: 2px solid #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+/* form  */
+#float-form input {
+  height: 40px;
+  border: none;
+  padding-left: 9px;
+  /* width: 100%; */
+  background: #f3f3f3;
+  border-radius: 0px;
+}
+
+.form-control:focus {
+  border-color: transparent !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-icon {
+  font-size: 20px;
+  padding: 10px;
+  /* background: linear-gradient(to right, #e5af08 0%, #e8bf00e0 100%); */
+  background: #ffa20e;
+  color: #fff;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.submit-btn,
+.enq-button {
+  margin: 0px auto;
+  display: block;
+  background: transparent;
+  border-radius: 10px;
+  padding: 8px 30px;
+  transition: all 0.5s ease;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.submit-btn:hover,
+.enq-button:hover {
+  background-color: #ffa20e;
+  color: #000;
+}
+
+.call-enq {
+  color: #000 !important;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.form-control {
+  border-top: 1px solid #262626;
+  border-right: 1px solid #262626;
+  border-bottom: 1px solid #262626;
+
+  border-radius: 2px 2px 2px 2px;
+}
+
+/* amenities section */
+
+.ame-icon {
+  max-width: 70px;
+  font-size: 68px;
+  /* color: #fad70e; */
+  color: #ffa20e;
+}
+
+.ame-icon-wrap {
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 3px 3px 10px #a2a2a2;
+  margin: 13px 0px;
+  padding: 20px;
+  background-color: #ffa20e;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+.ame-icon-wrap:hover {
+  background-color: #f5f5f5;
+  transform: translateY(-10px);
+  /* box-shadow: 6px 5px 15px 0px #939393 !important; */
+}
+.amenities-carousal1 .item {
+  margin: 5px;
+}
+.amenities-carousal1 .owl-nav,
+.amenities-carousal1 .owl-dots {
+  display: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #ffa500;
+  box-shadow: none;
+}
+
+#location .section-bg-img::before,
+.section-bg-img::after {
+  display: none;
+}
+
+.accordion-header button {
+  font-weight: 600;
+  font-size: 20px;
+  /* background: rgba(232, 160, 27, 0.4); */
+  background: #f5f5f5;
+  border: 2px solid transparent;
+}
+
+.location-img-wrap {
+  background: url(image/vision-palm-amore.jpg);
+}
+
+.about-section-wrap p {
+  padding: 0px 10%;
+  text-align: justify;
+}
+
+.form-wrapper {
+  padding: 0 70px;
+}
+
+.contact-img-wrap iframe {
+  width: 100%;
+  height: 450px;
+}
+
+/* gallery section  */
+
+ul#pills-tab {
+  display: flex;
+  justify-content: center;
+}
+
+#gallery .nav-link {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 2.5px;
+  color: #000;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  /* color: #fff !important; */
+  background-color: #ffa500;
+}
+
+#gallery .img-wrap {
+  filter: blur(2px);
+  transition: all 0.5s;
+}
+
+#gallery .owl-nav,
+#gallery .owl-dots {
+  display: none;
+}
+
+#gallery .img-wrap:hover {
+  filter: blur(0px);
+}
+
+/* desktop bottom sticky form */
+.bottom-stick-enquire-section {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  background: #ffffff;
+  padding-top: 14px;
+  box-shadow: 0px 0px 7px 0px;
+  z-index: 99;
+  padding-bottom: 10px;
+  /* margin-bottom: 50px; */
+}
+
+/* mobile sticky form  */
+.mobile-fixed-footer {
+  background-color: #262626;
+  color: #262626 !important;
+}
+
+/* footer section */
+.foot-img-wrap .img1 {
+  width: 265px;
+  height: 180px;
+}
+.foot-img-wrap .img2 {
+  width: 190px;
+  height: auto;
+}
+
+/* disclaimer  */
+
+#disclaimer p {
+  font-size: 15px;
+}
+
+/* thank you page  */
+.msgicon {
+  height: 100px;
+  width: 100px;
+  border: 4px solid #fff;
+  font-size: 50px;
+  /* background: linear-gradient(to right, #956657 0%, #956657e0 100%); */
+  background: #ffa20e;
+  color: #fff;
+  border-radius: 50%;
+  display: block;
+}
+
+.thank-you-page .head-text {
+  font-size: 45px;
+  letter-spacing: 1px;
+}
+
+.thank-btn {
+  font-size: 20px;
+  /* background: linear-gradient(to right, #956657 0%, #956657e0 100%); */
+  background-color: #ffa20e;
+  transition: ease 0.5s;
+  color: #000;
+  padding: 15px 28px;
+  border-radius: 50px;
+  display: block;
+}
+
+/* Media Screen */
+
+/* device category CSS max-width 1200 px */
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .about-section-wrap p,
+  .foot-content-wrap p,
+  .overview-content-wrap p {
+    font-size: 15px;
+  }
+
+  .tab-head {
+    font-size: 18px;
+  }
+
+  .section-pad-bottom {
+    padding-bottom: 30px;
+  }
+
+  .config-table-wrap {
+    padding: 0;
+  }
+
+  .ame-icon {
+    max-width: 55px;
+  }
+
+  .section-padding {
+    padding: 40px 0;
+  }
+
+  .overview-content-wrap {
+    padding: 40px 0;
+  }
+
+  .about-section-wrap p {
+    padding: 0 10px;
+    text-align: justify;
+  }
+
+  .contact-img-wrap iframe {
+    width: 100%;
+    height: 250px;
+  }
+  .form-wrapper {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .foot-img-wrap .img1 {
+    width: 192px;
+    height: 135px;
+  }
+  .foot-img-wrap .img2 {
+    width: 115px;
+    height: auto;
+  }
+}
